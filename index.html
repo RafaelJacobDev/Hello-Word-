@@ -7,49 +7,68 @@
     <!-- HEAD tag onde ficam as configurações da pagina - parte não visual -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Hello World</title>
     <!-- Única tag no HEAD que é visível -->
 </head>
 
 <body>
     <!-- BODY teg onde fica as partes visuais - o conteudo que vemos na pagina -->
-    <h1>Formulário do Torcedor</h1>
-    <form action="/action_page.php">
-        <label for="fname">Primeiro Nome:</label><br>
-        <input type="text" id="fname" name="fname" value="Rodrigo"><br>
-        <label for="lname">Ultimo nome</label><br>
-        <input type="text" id="lname" name="lname" value="Rodrigues"><br><br>
-        <label for="fname">Idade:</label><br>
-        <input type="text" id="fname" name="fname" value="18"><br><br>
-        <label for="fname">Celular com DDD:</label><br>
-        <input type="text" id="fname" name="fname" min="11" max="11" value="13000000000"><br><br>
-        <label for="fname">Time do coração:</label><br>
-<input type="radio" id="Corinthians" name="Time_do_coração" value="Corinthians">
-<label for="Corinthians">Corinthians</label><br>
-<input type="radio" id="Palmeiras" name="Time_do_coração" value="Palmeira">
-<label for="Palmeiras">Palmeiras</label><br>
-<input type="radio" id="Flamengo" name="Time_do_coração" value="Flamengo">
-<label for="Flamengo">Flamengo</label><br>
-<input type="radio" id="Atlético" name="Time_do_coração" value="Atlético">
-<label for="Atlético">Atlético</label><br><br>
-<label for="fname">Você é sócio torcedor?</label><br>
-<input type="radio" id="Sim" name="Você é sócio torcedor" value="Sim">
-<label for="Sim">Sim</label><br>
-<input type="radio" id="Não" name="Você é sócio torcedor" value="Não">
-<label for="Não">Não</label><br><br>
-<label for="fname">Aceita receber SMS sobre o seu time do coração?</label><br>
-<input type="radio" id="Sim" name="Aceita receber SMS sobre o seu time do coração?" value="Sim">
-<label for="Sim">Sim</label><br>
-<input type="radio" id="Não" name="Aceita receber SMS sobre o seu time do coração?" value="Não">
-<label for="Não">Não</label><br><br>
-<label for="fname">Quantas vezes você vai para estadio ?:</label><br>
-<input type="radio" id="Sim" name="Quantas vezes você vai para estadio ?" value="1 vez por mês">
-<label for="1 vez por mês">1 vez por mês</label><input type="radio" id="2 vez por mês" name="Quantas vezes você vai para estadio ?" value="2 vez por mês">
-<label for="2 vez por mês">2 vez por mês</label><input type="radio" id="3 vez por mês" name="Quantas vezes você vai para estadio ?" value="3 vez por mês">
-<label for="3 vez por mês">3 vez por mês</label><br>
+    <div class="container">
+        <h1>Formulário do Torcedor</h1>
+        <form action="/action_page.php">
+            <div class="nome">
+                <label for="fname">Primeiro Nome:</label><br>
+                <input type="text" id="fname" name="fname" value="Rodrigo"><br>
+                <label for="lname">Ultimo nome</label><br>
+                <input type="text" id="lname" name="lname" value="Rodrigues"><br><br>
+            </div>
+            <div class="Idade">
+                <label for="fname">Idade:</label><br>
+                <input type="number" id="fname" name="fname" value="18"><br><br>
+            </div>
+            <div class="Celular">
+                <label for="fname">Celular com DDD:</label><br>
+                <input type="text" id="fname" name="fname" min="11" max="11" value="13000000000"><br><br>
+            </div>
+            <div class="time">
+                <label for="fname">Time do coração:</label><br>
+                <input type="radio" id="Corinthians" name="Time_do_coração" value="Corinthians">
+                <label for="Corinthians">Corinthians</label><br>
+                <input type="radio" id="Palmeiras" name="Time_do_coração" value="Palmeira">
+                <label for="Palmeiras">Palmeiras</label><br>
+                <input type="radio" id="Flamengo" name="Time_do_coração" value="Flamengo">
+                <label for="Flamengo">Flamengo</label><br>
+                <input type="radio" id="Atlético" name="Time_do_coração" value="Atlético">
+                <label for="Atlético">Atlético</label><br><br>
+            </div>
+            <div class="sócio">
+                <label for="fname">Você é sócio torcedor?</label><br>
+                <input type="radio" id="Sim" name="Você é sócio torcedor" value="Sim">
+                <label for="Sim">Sim</label><br>
+                <input type="radio" id="Não" name="Você é sócio torcedor" value="Não">
+                <label for="Não">Não</label><br><br>
+            </div>
+            <div class="SMS">
+                <label for="fname">Aceita receber SMS sobre o seu time do coração?</label><br>
+                <input type="radio" id="Sim" name="Aceita receber SMS sobre o seu time do coração?" value="Sim">
+                <label for="Sim">Sim</label><br>
+                <input type="radio" id="Não" name="Aceita receber SMS sobre o seu time do coração?" value="Não">
+                <label for="Não">Não</label><br><br>
+            </div>
+            <div class="estadio">
+                <label for="fname">Quantas vezes você vai para estadio ?:</label><br>
+                <input type="radio" id="Sim" name="Quantas vezes você vai para estadio ?" value="1 vez por mês">
+                <label for="1 vez por mês">1 vez por mês</label><input type="radio" id="2 vez por mês"
+                    name="Quantas vezes você vai para estadio ?" value="2 vez por mês">
+                <label for="2 vez por mês">2 vez por mês</label><input type="radio" id="3 vez por mês"
+                    name="Quantas vezes você vai para estadio ?" value="3 vez por mês">
+                <label for="3 vez por mês">3 vez por mês</label><br>
+            </div>
 
-        <input type="submit" value="enviar"><br>
-    </form>
+            <input type="submit" value="enviar"><br>
+        </form>
+    </div>
 </body>
 
 </html>
