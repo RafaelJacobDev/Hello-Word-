@@ -16,20 +16,21 @@
     <!-- BODY teg onde fica as partes visuais - o conteudo que vemos na pagina -->
     <div class="container">
         <h1>Formulário do Torcedor</h1>
-        <form action="/action_page.php">
+        <form action="index.html" method="get">
             <div class="nome">
                 <label for="fname">Primeiro Nome:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Rodrigo"><br>
+                <input type="text" id="fname" name="fname" placeholder="Rodrigo" required><br>
                 <label for="lname">Ultimo nome</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Rodrigues"><br><br>
+                <input type="text" id="lname" name="lname" placeholder="Rodrigues" required><br>
             </div>
             <div class="Idade">
                 <label for="fname">Idade:</label><br>
-                <input type="number" id="fname" name="fname" placeholder="18"><br><br>
+                <input type="number" min="18" max="99" id="fname" name="fname" placeholder="18" required><br><br>
             </div>
             <div class="Celular">
                 <label for="fname">Celular com DDD:</label><br>
-                <input type="text" id="fname" name="fname" min="11" max="11" placeholder="13000000000"><br><br>
+                <input type="text" id="fname" name="fname" minlength="11" maxlength="11"
+                    placeholder="13000000000"><br><br>
             </div>
             <div class="time">
                 <label for="fname">Time do coração:</label><br>
@@ -40,25 +41,22 @@
                 <input type="radio" id="Flamengo" name="Time_do_coração" value="Flamengo">
                 <label for="Flamengo">Flamengo</label><br>
                 <input type="radio" id="Atlético" name="Time_do_coração" value="Atlético">
-                <label for="Atlético">Atlético</label><br><br>
+                <label for="Atlético">Atlético</label><br>
             </div>
             <div class="sócio">
-                <label for="fname">Você é sócio torcedor?</label><br>
-                <input type="radio" id="Sim" name="Você é sócio torcedor" value="Sim">
-                <label for="Sim">Sim</label><br>
-                <input type="radio" id="Não" name="Você é sócio torcedor" value="Não">
-                <label for="Não">Não</label><br><br>
+                <br>
+                <input type="checkbox" id="Sócio torcedor" name="Sócio torcedor" value="Sim">
+                <label for="Sócio torcedor"> Eu sou sócio torcedor</label><br><br>
             </div>
             <div class="SMS">
-                <label for="fname">Aceita receber SMS sobre o seu time do coração?</label><br>
-                <input type="radio" id="Sim" name="Aceita receber SMS sobre o seu time do coração?" value="Sim">
-                <label for="Sim">Sim</label><br>
-                <input type="radio" id="Não" name="Aceita receber SMS sobre o seu time do coração?" value="Não">
-                <label for="Não">Não</label><br><br>
+                <br>
+                <input type="checkbox" id="Receber SMS" name="Receber SMS" value="Sim">
+                <label for="Receber SMS"> Eu aceito receber SMS sobre meu time de coração</label><br><br>
             </div>
             <div class="estadio">
                 <label for="fname">Quantas vezes você vai para estadio ?:</label><br>
-                <input type="radio" id="Sim" name="Quantas vezes você vai para estadio ?" value="1 vez por mês">
+                <input type="radio" id="1 vez por mês" name="Quantas vezes você vai para estadio ?"
+                    value="1 vez por mês">
                 <label for="1 vez por mês">1 vez por mês</label><input type="radio" id="2 vez por mês"
                     name="Quantas vezes você vai para estadio ?" value="2 vez por mês">
                 <label for="2 vez por mês">2 vez por mês</label><input type="radio" id="3 vez por mês"
@@ -66,7 +64,15 @@
                 <label for="3 vez por mês">3 vez por mês</label><br>
             </div>
 
-            <input type="submit" value="enviar"><br>
+            <input type="submit" class="button" value="enviar"><br>
+         
+         <!-- Footer -->
+
+          
+            <img class=imagem src="https://i.pinimg.com/736x/67/9d/b6/679db6522cdff2907b97ed3aead26d87.jpg"
+                alt="super11" width="280" height="280"><div></div>
+    
+
         </form>
     </div>
 </body>

@@ -1,18 +1,64 @@
 .container{
 text-align: center;
 background-image: url(https://previews.123rf.com/images/dimiramos/dimiramos2306/dimiramos230600074/205825578-brazil-soccer-player-running-with-the-ball-colored-drawing-with-simple-strokes.jpg) ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 }
 .nome{
     background-color: #606cee;
-    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
-.idade{}
-.telefone{}
+.idade{
+        width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.telefone{
+        width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
 .time{
     background-color: #606cee;
+        width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 .sócio{}
 .SMS{
     background-color: #606cee;
+        width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
-.estadio{}
+.estadio{
+        width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 20%;
+    background-color: #594de5;
+    color: white;
+    padding: auto;
+    margin: auto;
+    border: nome;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 37px;
+}
+
+.imagem{
+    border-radius: 50%;
+}
+
